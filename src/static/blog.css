@@ -1,0 +1,14 @@
+body {
+    /* background-color: #efefef; */
+    background-color: #2c323b;
+    color: #eadbb2;
+}
+
+.main {
+    background-color: #2c323b;
+    margin: 30px;
+}
+
+.test {
+    background-color: #000000;
+}
