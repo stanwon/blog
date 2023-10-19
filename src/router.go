@@ -44,8 +44,9 @@ func index(c *gin.Context) {
 
 func run() {
 	router := gin.Default()
-	router.Static("/css", "static")
-	router.LoadHTMLGlob("static/*")
+	router.Static("/static/css", "./static/css")
+	router.Static("/static/js", "static/js")
+	router.LoadHTMLGlob("static/*.html")
 
 	router.GET("/", index)
 	router.GET("/article", getArticles)
